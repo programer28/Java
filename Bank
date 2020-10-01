@@ -1,4 +1,4 @@
-int pizzaprice=Integer.parseInt(t1.getsdsfText()); 
+int pizzaprice=Integer.parseInt(t1.getText()); 
         int qty=Integer.parseInt(t2.getText());  
         int amount,amt = 0; 
         amount=pizzaprice*qty+amt;
