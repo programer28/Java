@@ -1,0 +1,48 @@
+int pizzaprice=Integer.parseInt(t1.getsdsfText()); 
+        int qty=Integer.parseInt(t2.getText());  
+        int amount,amt = 0; 
+        amount=pizzaprice*qty+amt;
+        if (cb1.isSelected()) 
+        { 
+          amt=30;  
+        } 
+        else if(cb2.isSelected()) 
+        { 
+            amt=10;
+        } 
+        else if (cb3.isSelected()) 
+        { 
+            amt=10;
+        }  
+        else if(cb4.isSelected()) 
+        { 
+            amt=20;
+        } 
+        float disc = 0; 
+        if (rb1.isSelected()) 
+        { 
+            disc=(amount*5)/100;
+        } 
+        else if (rb2.isSelected()) 
+                { 
+                    disc=(amount*90)/100;
+                }  
+        float totamount; 
+        totamount=amount-disc;
+        t3.setText(""+totamount);
+                 
+                    
+                
+    }                                        
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        t1.setText(""); 
+        t2.setText(""); 
+        t3.setText(""); 
+        rb1.setSelected(false); 
+        rb2.setSelected(false);
+        cb1.setSelected(false); 
+        cb2.setSelected(false); 
+        cb3.setSelected(false); 
+        cb4.setSelected(false);
+    }            
